@@ -9,51 +9,51 @@
 
 	<div class="position-relative">
 		<!-- Hero for FREE version -->
-		<section class="section section-lg section-hero section-shaped">
-			<!-- Background circles -->
-			<div class="shape shape-style-1 shape-primary">
-				<span class="span-150"></span>
-				<span class="span-50"></span>
-				<span class="span-50"></span>
-				<span class="span-75"></span>
-				<span class="span-100"></span>
-				<span class="span-75"></span>
-				<span class="span-50"></span>
-				<span class="span-100"></span>
-				<span class="span-50"></span>
-				<span class="span-100"></span>
-			</div>
-			<div class="container shape-container d-flex align-items-center py-lg">
-				<div class="col px-0">
-					<div class="row align-items-center justify-content-center">
-						<div class="col-lg-6 text-center">
-							<img src="/assets/img/brand/white.png" style="width: 200px;" class="img-fluid">
-							<p class="lead text-white">A beautiful Design System for Bootstrap 4. It's Free and Open Source.</p>
-							<div class="btn-wrapper mt-5">
-								<a href="https://www.creative-tim.com/product/argon-design-system" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
-									<span class="btn-inner--icon"><i class="ni ni-cloud-download-95"></i></span>
-									<span class="btn-inner--text">Download HTML</span>
-								</a>
-								<a href="https://github.com/creativetimofficial/argon-design-system" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0" target="_blank">
-									<span class="btn-inner--icon"><i class="fa fa-github"></i></span>
-									<span class="btn-inner--text"><span class="text-warning">Star us</span> on Github</span>
-								</a>
-							</div>
-							<div class="mt-5">
-								<small class="text-white font-weight-bold mb-0 mr-2">*proudly coded by</small>
-								<img src="/assets/img/brand/creativetim-white-slim.png" style="height: 28px;">
-							</div>
-						</div>
-					</div>
-				</div>
+		{{-- <section class="section section-lg section-hero section-shaped"> --}}
+			<!-- carousel -->
+			<div class="row front-slider ">
+			  <div class="col-md-12 mx-auto">
+			    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			      <ol class="carousel-indicators">
+			        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			      </ol>
+			      <div class="carousel-inner">
+			        <div class="carousel-item active" style="background-image: url('/assets/img/d6.jpg');">
+			          {{-- <img class="img-couresel" src="/assets/img/d6.jpg" alt="First slide"> --}}
+
+			         <div class="carousel-caption">
+			         	<div class="text-center">
+			         		<h3 style="padding: 100px;" >Welcome To Seventh Day Adventist Church Multimedia University Of Kenya</h3>
+			         	</div>
+			         </div>
+			        </div>
+			        <div class="carousel-item" style="background-image: url('/assets/img/d2.jpg');">
+			          {{-- <img class="img-couresel" src="/assets/img/d2.jpg" alt="Second slide"> --}}
+			        </div>
+			        <div class="carousel-item" style="background-image: url('/assets/img/d5.jpg');"> 
+			          {{-- <img class="img-couresel" src="/assets/img/d5.jpg" alt="Third slide"> --}}
+			        </div>
+			      </div>
+			      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			        <span class="sr-only">Previous</span>
+			      </a>
+			      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			        <span class="sr-only">Next</span>
+			      </a>
+			    </div>
+			  </div>
 			</div>
 			<!-- SVG separator -->
-			<div class="separator separator-bottom separator-skew zindex-100">
+			{{-- <div class="separator separator-bottom separator-skew zindex-100">
 				<svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
 					<polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
 				</svg>
-			</div>
-		</section>
+			</div> --}}
+		{{-- </section> --}}
 	</div>
 
 </main>
