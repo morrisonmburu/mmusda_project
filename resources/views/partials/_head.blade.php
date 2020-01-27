@@ -22,6 +22,7 @@
   <link href="/assets/img/adventist-Logo.png" rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
   <!-- Icons -->
   <link href="/assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
   <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">

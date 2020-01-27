@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Event;
 
 class PagesController extends Controller {
 	public function getIndex(){
@@ -24,5 +25,11 @@ class PagesController extends Controller {
 
 	public function getContact(){
 		return view('pages.contact');
+	}
+
+	public function timeline(){
+		$event = Event::all();
+
+		return view('timeline.index', compact('event'));
 	}
 }

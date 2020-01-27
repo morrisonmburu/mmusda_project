@@ -11,7 +11,7 @@
 		<!-- Hero for FREE version -->
 		{{-- <section class="section section-lg section-hero section-shaped"> --}}
 			<!-- carousel -->
-			<div class="row front-slider ">
+			<div class="row">
 			  <div class="col-md-12 mx-auto">
 			    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			      <ol class="carousel-indicators">
@@ -20,20 +20,33 @@
 			        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 			      </ol>
 			      <div class="carousel-inner">
-			        <div class="carousel-item active" style="background-image: url('/assets/img/d6.jpg');">
+			        <div class="carousel-item active" style="background-image: url('/assets/img/d6.jpg');background-size: cover;background-repeat: no-repeat;">
 			          {{-- <img class="img-couresel" src="/assets/img/d6.jpg" alt="First slide"> --}}
 
-			         <div class="carousel-caption">
+			         <div class="front-slider">
 			         	<div class="text-center">
-			         		<h3 style="padding: 100px;" >Welcome To Seventh Day Adventist Church Multimedia University Of Kenya</h3>
+			         		<h3 class="front-text" >Welcome To Seventh Day Adventist Church Multimedia University Of Kenya</h3>
 			         	</div>
 			         </div>
 			        </div>
-			        <div class="carousel-item" style="background-image: url('/assets/img/d2.jpg');">
+			        <div class="carousel-item" style="background-image: url('/assets/img/d2.jpg');background-size: cover;background-repeat: no-repeat;">
 			          {{-- <img class="img-couresel" src="/assets/img/d2.jpg" alt="Second slide"> --}}
+			           <div class="front-slider">
+			         	<div class="text-center">
+			         		<h3 class="front-text">Welcome To Seventh Day Adventist Church Multimedia University Of Kenya</h3>
+			         	</div>
+			         </div>
 			        </div>
-			        <div class="carousel-item" style="background-image: url('/assets/img/d5.jpg');"> 
+			          <div class="carousel-item" style="background-image: url('/assets/img/d3.jpg');background-size: cover;background-repeat: no-repeat;"> 
 			          {{-- <img class="img-couresel" src="/assets/img/d5.jpg" alt="Third slide"> --}}
+			           <div class="front-slider">
+			         	<div class="text-center">
+			         		<h3 class="front-text">Welcome To Seventh Day Adventist Church Multimedia University Of Kenya</h3>
+			         	</div>
+			         </div>
+			        </div>
+			        </div>
+			      
 			        </div>
 			      </div>
 			      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

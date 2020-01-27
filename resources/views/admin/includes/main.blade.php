@@ -31,6 +31,7 @@
   </div>
   <!--   Core   -->
   <script src="/assets2/js/plugins/jquery/dist/jquery.min.js"></script>
+   @yield('scripts')
   <script src="/assets2/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!--   Optional JS   -->
 
@@ -40,12 +41,26 @@
   <script src="/assets2/js/plugins/chart.js/dist/Chart.min.js"></script>
   <script src="/assets2/js/plugins/chart.js/dist/Chart.extension.js"></script>
   <!--   Argon JS   -->
+   <script type="text/javascript" src="/sweetalert/sweetalert.min.js"></script>
   <script src="/assets2/js/argon-dashboard.min.js?v=1.1.0"></script>
-  <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  {{-- <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script> --}}
+
 
   <script type="text/javascript">
      $('#d-date').datepicker({
           language: 'en',
+          minDate: new Date() // Now can select only dates, which goes after today
+      })
+
+     $('#s_date').datepicker({
+          language: 'en',
+          timeFormat: 'hh:ii aa',
+          minDate: new Date() // Now can select only dates, which goes after today
+      })
+
+     $('#e_date').datepicker({
+          language: 'en',
+          timeFormat: 'hh:ii aa',
           minDate: new Date() // Now can select only dates, which goes after today
       })
   </script>

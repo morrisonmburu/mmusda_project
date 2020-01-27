@@ -20306,3 +20306,12 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle
     width: 100%;
     
 }
+
+.front-slider{
+    margin: 200px;
+
+}
+
+.front-text{
+    color: #ffffff;
+}

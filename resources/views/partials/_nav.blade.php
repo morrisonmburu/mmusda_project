@@ -61,7 +61,7 @@
                 <span class="nav-link-inner--text">Activities</span>
               </a>
               <div class="dropdown-menu">
-                <a href="" class="dropdown-item">Announcements</a>
+                <a href="/announcements" class="dropdown-item">Announcements</a>
                 <a href="" class="dropdown-item">Sermons</a>
                 <a href="" class="dropdown-item">Timeline</a>
               </div>

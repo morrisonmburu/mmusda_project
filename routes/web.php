@@ -18,6 +18,12 @@ Route::get('about', 'PagesController@getAbout');
 Route::get('/', 'PagesController@getIndex');
 Route::resource('posts', 'PostController');
 Route::resource('announces', 'AnceController');
+Route::resource('depart', 'departController');
+Route::resource('events', 'EventController');
+Route::get('events/edit/{id}','EventController@edit')->name('events.edit');
+Route::post('events/destroy', 'EventController@destroy')->name('events.destroy');
+Route::get('timeline', 'PagesController@timeline')->name('timeline');
+Route::get('announcements', 'announcementsController@anceIndex')->name('announcements');
 
 Route::group(['middleware' => ['web']], function (){
 	//

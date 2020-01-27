@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Post;
 use Session;
+use App\User;
 
 class PostController extends Controller
 {
@@ -17,9 +18,10 @@ class PostController extends Controller
     {
         //create a variable and store all the posts from the database
         $posts = Post::orderBy('id', 'desc')->paginate(10);
+        $user = User::all();
 
         //return a view and pass in the above variable
-        return view('admin.posts.index')->withPosts($posts);
+        return view('admin.posts.index')->withPosts($posts)->withUser($user);
     }
 
     /**
@@ -29,7 +31,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        $user = User::all();
+        return view('admin.posts.create')->withUser($user);
 
     }
 
@@ -73,7 +76,8 @@ class PostController extends Controller
     public function show($id)
     {
         $post = Post::find($id);   
-        return view('admin.posts.show')->withPost($post);
+        $user = User::all();
+        return view('admin.posts.show')->withPost($post)->withUser($user);
 
     }
 
@@ -87,9 +91,9 @@ class PostController extends Controller
     {
         // find the post in the database and save as a year
         $post = Post::find($id);
-
+        $user = User::all();
         //return the view and pass in the var we previously created
-        return view('admin.posts.edit')->withPost($post);
+        return view('admin.posts.edit')->withPost($post)->withUser($user);
     }
 
     /**

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\anouncements;
 use App\Post;
 use Session;
+use App\User;
 
 class AnceController extends Controller
 {
@@ -17,8 +18,9 @@ class AnceController extends Controller
 	public function index()
 	{
 		$announces = anouncements::orderBy('id', 'desc')->paginate(10);
+		$user = User::all();
 
-		return view('admin.announce.index')->withAnnounces($announces);
+		return view('admin.announce.index')->withAnnounces($announces)->withUser($user);
 	}
 
 	/**
@@ -28,7 +30,8 @@ class AnceController extends Controller
 	 */
 	public function create()
 	{
-		return view('admin.announce.create');
+		$user = User::all();
+		return view('admin.announce.create')->withUser($user);
 	}
 
 	/**
@@ -70,8 +73,9 @@ class AnceController extends Controller
 	public function show($id)
 	{
 		$announce = anouncements::find($id);
+		$user = User::all();
 
-		return view('admin.announce.show')->withAnnounce($announce);
+		return view('admin.announce.show')->withAnnounce($announce)->withUser($user);
 	}
 
 	/**
@@ -83,8 +87,9 @@ class AnceController extends Controller
 	public function edit($id)
 	{
 		$announce = anouncements::find($id);
+		$user = User::all();
 
-		return view('admin.announce.edit')->withAnnounce($announce);
+		return view('admin.announce.edit')->withAnnounce($announce)->withUser($user);
 	}
 
 	/**
